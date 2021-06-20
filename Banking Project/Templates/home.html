@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+
+div {
+  float: left; 
+}
+
+img {
+  width: 70%;
+}
+
+.div2{
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.div1{
+  padding-top: 50px;
+}
+
+h1 {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 50px;
+}
+h2 {
+  padding: 10px;
+  text-align: center;
+  color: #1abc9c;
+  font-size: 50px;
+}
+h3 {
+  padding: 5px;
+  text-align: center;
+  color: #1abc9c;
+  font-size: 25px;
+}
+
+.button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>
+<button onclick="document.location='home'" style="float:left;" >
+<img src="{{url_for('static', filename='bank.jpg')}}" style="float:left;width:75px;height:75px; "/>
+</button>
+Banking Application
+</h1>
+
+<div class="div2">
+<img src="{{url_for('static', filename='thumb.jfif')}}" />
+</div>
+
+<div class="div1">
+<h2> Welcome! </h2>
+<h3> Choose an option </h3>
+<button class="button" onclick="document.location='transfer'">Transfer Money</button>
+<button class="button" onclick="document.location='transaction'">Transactions</button>
+</div>
+</body>
+</html>
